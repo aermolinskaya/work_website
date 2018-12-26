@@ -111,6 +111,7 @@ a {
 .main_menu a:hover {
     color: #55405f;
     border-bottom: 2px solid #55405f;
+    padding-bottom: 3px;
 }
 .logo {
     position: relative;
@@ -118,30 +119,48 @@ a {
     left: 20px;
     width: 170px;
     height: 50px;
-    font-size: 12px;
-    color: black;
     vertical-align: middle;
     text-align: left;
     float: left;
     background-color: white;
 }
+.logo p:nth-child(1) {
+  font-size: 36px;
+}
+.logo p:nth-child(2) {
+  font-size: 25px;
+}
+.logo a:nth-child(1) p {
+  display: inline-block;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  color: black;
+}
+.logo a:nth-child(2) p {
+  margin: 0px;
+  margin-top: -5px;
+  padding: 0px;
+  font-size: 12px;
+  color: #999999;
+}
 
-.catchy_title {
-  height: 420px;
+.home {
+  height: 415px;
   width: 100%;
   background-color: #ebebeb;
+  margin-bottom: -60px;
 }
 .monitor
 {
-	width:48%;
-	float:left;
+	width: 48%;
+	float: left;
   margin: 20px;
   margin-right: 60px;
   padding-top: 5px;
 }
 .monitor img
 {
-	width:100%;
+	width: 100%;
 }
 .monitor-content
 {
@@ -185,14 +204,46 @@ label.button{
   text-transform: uppercase;
 }
 
+.arrows {
+  height: 55px;
+  width: 960px;
+  margin: 0px 20px;
+  //padding: 0px 20px;
+  //margin-top: -105px;
+  border-radius: 10px 10px 0 0;
+  background: white;
+  //padding-top: 60px;
+}
+.arrows div {
+  display: inline-block;
+  position: relative;
+}
+.arrow {
+  height: 55px;
+  width: 30px;
+  padding-top: 15px;
+  //margin: 5px;
+  border-radius: 10px;
+}
+.arrows div:nth-child(1) {
+  float: left;
+  border-radius: 10px 0 0 0;
+}
+.arrows div:nth-child(2) {
+  float: right;
+  transform: scale(-1, 1);
+  border-radius: 10px 0 0 0;
+}
+
 .slider {
   height: 275px;
-  margin: 0px 20px;
-  margin-top: -65px;
-  padding: 0px 30px;
+  margin: 0px 50px;
+  margin-top: -58px;
+  //margin-bottom: 20px;
+  padding: 0px;
   padding-top: 20px;
   border: 2px solid white;
-  border-radius: 10px;
+  //border-radius: 10px;
   background: white;
 }
 .slider div {
@@ -208,10 +259,12 @@ label.button{
 .sl-elem:nth-child(1) {
   margin-left: 0px;
   padding-left: 0px;
+  left: 0;
 }
 .sl-elem:nth-child(4) {
   margin-right: 0px;
   padding-right: 0px;
+  right: 0;
 }
 .sl-img {
   height: 64px;
@@ -391,6 +444,31 @@ label.button{
 }
 .newsletter {
   height: 100%;
+  padding-top: 5px;
+  line-height: 5px;
+}
+.newsletter input {
+  height: 25px;
+  padding-left: 8px;
+  background-color: #363636;
+  margin-bottom: 5px;
+  border: 1px solid #363636;
+  border-radius: 3px;
+}
+.social {
+  margin-top: 20px;
+  margin-left: -4px;
+}
+.social div {
+  display: inline-block;
+  position: relative;
+  height: 22px;
+  width: 22px;
+  margin: 4px;
+  padding: 5px;
+  text-align: center;
+  background-color: #363636;
+  border-radius: 15px;
 }
 
 .copyright {
